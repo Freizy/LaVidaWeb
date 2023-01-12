@@ -16,5 +16,5 @@ export default async function (req, res) {
   res.status(200).json({ result: completion.data.choices[0].text });
 }
 function generatePrompt(gender, age, symptoms) {
-  return `suggest 5 sicknesses, its causes and solutions a ${age} years old ${gender} experiencing ${symptoms} may be having.`;
+  return `briefly explain 5 sicknesses, its causes and solutions a ${age} years old ${gender} experiencing ${symptoms} may be having.`;
 }
